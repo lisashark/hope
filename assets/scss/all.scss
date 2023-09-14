@@ -1,11 +1,40 @@
+@import url('https://rawcdn.githack.com/lisashark/swimming/b727935aeed657725e5b9cddcc53be846954e7cb/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&family=Rampart+One&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
 @import "../../node_modules/bootstrap/scss/functions";
-@import './utils/variables';
+@import './utils/bs5-variable/BS1-color';
+@import './utils/bs5-variable/BS2-setteing';
+@import './utils/bs5-variable/BS3-spacing-layout';
+@import './utils/bs5-variable/BS4-border-boxshadow';
+@import './utils/bs5-variable/BS5-body-typograph';
+@import './utils/bs5-variable/BS6.spText';
+@import './utils/bs5-variable/BS7-link-UIeffect';
+@import './utils/bs5-variable/BS8-button';
+@import './utils/bs5-variable/BS9-navHeader-tab';
+@import './utils/bs5-variable/BS10-variable';
+
+
+@import './utils/component';
+@import './utils/googleMaterial';
 
 
 @import './layout/header.scss';
 @import './layout/footer.scss';
-
-
 @import './pages/index.scss';
 
 @import "../../node_modules/bootstrap";
+
+
+
+.font-family-sp {
+    font-family: 'Rampart One', cursive;
+}
+
+.font-family-text {
+    font-family: 'Noto Serif TC';
+}
+
+
+h1,
+h2 {
+    font-family: 'Rampart One', cursive;
+}
