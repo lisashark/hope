@@ -5,7 +5,7 @@
 // You can add more entries to the $spacers map, should you need more variation.
 
 // scss-docs-start spacer-variables-maps
-$spacer: 1rem !default;
+$spacer: 0;
 $spacers: (
     0: 0,
     1: $spacer * .25,
