@@ -126,9 +126,9 @@
         <h2 class="text-primary text-center mb-32">抽卡訂閱方案</h2>
         <div class="row">
           <div class="col-lg-4">
-            <div class="price-card">
+            <div class="price-card" data-aos="fade-down">
               <div class="priceImg priceImg1 d-flex justify-content-center align-items-end p-20">
-                <a href="#" class="btn fs-24">Try Now!</a>
+                <a href="#drawCard" class="btn fs-24">Try Now!</a>
                 <p class="text-white text-center fs-20 font-family-sp">訪客</p>
               </div>
               <div class="price-body text-center pt-24 pb-32 py-sm-32 px-12 ">
@@ -140,7 +140,7 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="price-card">
+            <div class="price-card" data-aos="fade-down" data-aos-delay="300">
               <div class="priceImg priceImg2 d-flex justify-content-center align-items-end p-20">
                 <a href="#" class="btn fs-24">立即註冊</a>
                 <p class="text-white text-center fs-20 font-family-sp">註冊會員</p>
@@ -155,7 +155,7 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="price-card">
+            <div class="price-card" data-aos="fade-down" data-aos-delay="500">
               <div class="priceImg priceImg3 d-flex justify-content-center align-items-end p-20">
                 <a href="#" class="btn fs-24">立即購買</a>
                 <p class="text-white text-center fs-20 font-family-sp">Premium會員</p>
@@ -175,18 +175,19 @@
       </div>
     </section>
 
-    <section class="home-draw p-block mt-32">
+    <section class="home-draw p-block mt-md-32" id="drawCard">
       <div class="container-xl">
         <div class="row">
-          <div class="col-lg-6 d-lg-flex flex-column justify-content-between pb-24">
-            <div class="titleBox text-white">
-              <h2>抽卡體驗</h2>
-              <p class="fs-32 fw-bold">Just Try!</p>
+          <div class="col-md-3 col-lg-6 d-md-flex flex-column justify-content-between pb-24 text-center text-md-start">
+            <div class="titleBox text-white pt-md-12">
+              <h2 class="d-inline-block">抽卡體驗</h2>
+              <p class="fs-32 fw-bold d-inline-block">Just Try!</p>
             </div>
-            <button type="button" class="btn">再抽一次</button>
+            <button type="button" class="btn mt-18 d-inline-block">再抽一次</button>
           </div>
-          <div class="col-lg-6">
-            <div class="draw-card d-flex flex-column justify-content-center p-24">
+          <div class="col-md-9 col-lg-6">
+            <div class="draw-card d-flex flex-column justify-content-center p-24" data-aos="flip-left"
+              data-aos-duration="1000">
               <p>The only way is go through</p>
             </div>
           </div>
@@ -209,10 +210,10 @@
         <div class="row">
           <div class="col d-flex flex-column">
             <div class="QAcard">
-              <button class="question d-flex align-items-center justify-content-between px-24 pt-20 pb-12" type="button"
+              <button class="question d-flex align-items-center justify-content-between px-24 py-16" type="button"
                 data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
                 aria-controls="collapseExample">
-                <p>一定要註冊才能使用服務嗎？</p>
+                <p class="text-start">一定要註冊才能使用服務嗎？</p>
                 <span class="material-symbols-outlined add text-primary fw-bold">
                   add
                 </span><span class="material-symbols-outlined remove text-primary fw-bold">
@@ -226,9 +227,9 @@
               </div>
             </div>
             <div class="QAcard">
-              <button class="question d-flex align-items-center justify-content-between px-24 pt-20 pb-12" type="button"
+              <button class="question d-flex align-items-center justify-content-between px-24 py-16" type="button"
                 data-bs-toggle="collapse" data-bs-target="#QA2" aria-expanded="false" aria-controls="collapseExample">
-                <p>資料可以匯出嗎?</p>
+                <p class="text-start">資料可以匯出嗎?</p>
                 <span class="material-symbols-outlined add text-primary fw-bold">
                   add
                 </span><span class="material-symbols-outlined remove text-primary fw-bold">
@@ -242,9 +243,9 @@
               </div>
             </div>
             <div class="QAcard">
-              <button class="question d-flex align-items-center justify-content-between px-24 pt-20 pb-12" type="button"
+              <button class="question d-flex align-items-center justify-content-between px-24 py-16" type="button"
                 data-bs-toggle="collapse" data-bs-target="#QA3" aria-expanded="false" aria-controls="collapseExample">
-                <p>有什麼付款方式?</p>
+                <p class="text-start">有什麼付款方式?</p>
                 <span class="material-symbols-outlined add text-primary fw-bold">
                   add
                 </span><span class="material-symbols-outlined remove text-primary fw-bold">
@@ -260,23 +261,9 @@
           </div>
         </div>
       </div>
-
-
-
-
-
-
-
-
     </section>
-
-
-
-
   </main>
-
   <%- include('./layout/footer'); -%>
-
     <script type="module" src="../main.js"></script>
 </body>
 

@@ -1,17 +1,26 @@
 <header>
-    <div class="container-lg">
-        <div class="d-flex align-items-center">
-            <div class="imgBox"><img src="../assets/images/logo-01.png"></div>
-            <ul class="d-flex align-items-center">
-                <li><a href="">我的抽卡</a></li>
-                <li><a href="">管理卡冊</a></li>
-                <li><a href="#">心理資源</a></li>
-            </ul>
-            <div class="login">
-                <button type="button">登出</button>
-                <a class="member" href="#">我的帳號</a>
+    <nav class="navbar navbar-expand-md">
+        <div class="container-xl align-items-center justify-content-between">
+            <div class="imgBox me-md-32"><img src="../assets/images/logo.png"></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-md-between" id="navbarScroll">
+                <ul class="d-flex align-items-center navbar-nav">
+                    <li><a href="" class="liBtn">我的抽卡</a></li>
+                    <li><a href="" class="liBtn ms-md-12 mt-16 mt-md-0 d-inline-block">管理卡冊</a></li>
+                </ul>
+                <div class="login d-flex flex-column flex-md-row align-items-center">
+                    <a class="member me-md-12 mt-16 mt-md-0" href="#">我的帳號</a>
+                    <button type="button"
+                        class="logout d-flex align-items-center text-center text-md-start mt-16 mt-md-0">
+                        <span class="material-symbols-rounded nothover me-4">mood
+                        </span><span class="material-symbols-outlined ishover me-4">
+                            sentiment_stressed
+                        </span>登出</button>
+                </div>
             </div>
         </div>
-
-    </div>
+    </nav>
 </header>

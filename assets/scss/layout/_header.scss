@@ -1,5 +1,62 @@
 header {
+  font-size: 18px;
+
   .imgBox {
-    width: 80px;
+    height: 60px;
+
+    img {
+      height: 100%;
+      width: auto;
+    }
   }
+
+  .navbar-toggler {
+    border: none;
+    box-shadow: none;
+
+    &:hover {
+      border: none;
+    }
+  }
+
+  .liBtn {
+    @include media-breakpoint-up(md) {
+      border-radius: 30px;
+      background-color: rgba($color: #FFF, $alpha: 0.5);
+      padding: 8px 20px;
+    }
+  }
+
+  .logout {
+    .nothover {
+      display: block;
+    }
+
+    .ishover {
+      display: none;
+    }
+
+    @include media-breakpoint-up(md) {
+      border-radius: 30px;
+      background-color: rgba($color: $secondary, $alpha: 0.8);
+      padding: 8px 20px;
+
+      &:hover {
+        color: #FFF;
+        background-color: $primary;
+
+        .nothover {
+          display: none;
+        }
+
+        .ishover {
+          display: block;
+        }
+      }
+
+    }
+
+  }
+
+
 }
