@@ -1,5 +1,5 @@
 @import url('https://rawcdn.githack.com/lisashark/swimming/b727935aeed657725e5b9cddcc53be846954e7cb/reset.css');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&family=Rampart+One&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&family=Mochiy+Pop+One&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/bs5-variable/BS1-color';
 @import './utils/bs5-variable/BS2-setteing';
@@ -11,30 +11,40 @@
 @import './utils/bs5-variable/BS8-button';
 @import './utils/bs5-variable/BS9-navHeader-tab';
 @import './utils/bs5-variable/BS10-variable';
+@import "../../node_modules/bootstrap";
+@import url("https://unpkg.com/aos@next/dist/aos.css");
 
-
-@import './utils/component';
+@import './utils/typograph';
 @import './utils/googleMaterial';
-
+@import './utils/component';
+@import './utils/animation';
 
 @import './layout/header.scss';
 @import './layout/footer.scss';
 @import './pages/index.scss';
 
-@import "../../node_modules/bootstrap";
 
 
+.p-block {
+    padding-block: 80px;
 
-.font-family-sp {
-    font-family: 'Rampart One', cursive;
+
+    @include media-breakpoint-up(lg) {
+        padding-block: 120px;
+    }
 }
 
-.font-family-text {
-    font-family: 'Noto Serif TC';
-}
 
+.btn {
+    border-radius: 40px;
+    padding: 20px 28px;
+    background-color: transparent;
+    border: 1px solid $white;
+    color: $white;
+    font-weight: bold;
 
-h1,
-h2 {
-    font-family: 'Rampart One', cursive;
+    &:hover {
+        color: $primary;
+        border: 2px solid $primary;
+    }
 }

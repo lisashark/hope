@@ -5,14 +5,20 @@
 // You can add more entries to the $spacers map, should you need more variation.
 
 // scss-docs-start spacer-variables-maps
-$spacer: 0;
+$spacer: 1rem;
 $spacers: (
     0: 0,
-    1: $spacer * .25,
-    2: $spacer * .5,
-    3: $spacer,
-    4: $spacer * 1.5,
-    5: $spacer * 3,
+    4: 4px,
+    8: 8px,
+    12: 12px,
+    16: 16px,
+    20: 20px,
+    24:24px,
+    28:28px,
+    32:32px,
+    36:36px,
+    40:40px,
+    60:60px,
     ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -79,4 +85,4 @@ $gutters: $spacers !default;
 
 // Container padding
 
-$container-padding-x: $grid-gutter-width * .5 !default;
+$container-padding-x: 48px;

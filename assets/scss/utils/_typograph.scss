@@ -1,0 +1,29 @@
+.font-family-sp {
+    font-family: 'Mochiy Pop One';
+}
+
+.font-family-text {
+    font-family: 'Noto Serif TC';
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Mochiy Pop One';
+}
+
+h2 {
+    font-size: 32px;
+
+    @include media-breakpoint-up(md) {
+        font-size: 40px;
+    }
+}
+
+.shadow-white {
+    text-shadow: .08em .08em 0 $white;
+}
+
+.shadow-primary {
+    text-shadow: .08em .08em 0 $primary;
+}

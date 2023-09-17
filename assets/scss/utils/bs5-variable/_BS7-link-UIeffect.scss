@@ -14,8 +14,8 @@ $stretched-link-z-index: 1 !default;
 
 // Components
 //
-$component-active-color: $white !default;
-$component-active-bg: $primary !default;
+$component-active-color: $primary;
+$component-active-bg: transparent;
 
 // scss-docs-start caret-variables  //下拉三角形icon
 $caret-width: .3em !default;

@@ -1,0 +1,39 @@
+.animation-swing {
+    animation: swing 2s ease-in-out infinite;
+}
+
+@keyframes swing {
+
+    0%,
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    34% {
+        transform: translateX(8px) rotate(-5deg);
+    }
+
+    66% {
+        transform: translateX(-8px) rotate(5deg);
+    }
+}
+
+.animation-jumpY {
+    animation: jumpY 1s ease-in-out infinite;
+}
+
+@keyframes jumpY {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    34% {
+        transform: translateY(-3px);
+    }
+
+    66% {
+        transform: translateY(3px);
+    }
+}

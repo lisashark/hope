@@ -5,51 +5,279 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
   <title>index</title>
 </head>
 
 <body>
-  <%- include('./layout/header'); -%>
-
-    <h1 class="index-title">沒關係，只是現在有點喪</h1>
-    <h2>喪泥!Sunny! 沒有什麼是一定</h2>
-
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
-    </div>
-
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <main class="page-home">
+    <section class="home-coverPic">
+      <%- include('./layout/header'); -%>
+        <div class="container-lg main-cover">
+          <div class="row">
+            <div class="col-12 col-md-4 col-lg-5"></div>
+            <div class="col-12 col-md-8 col-lg-7 d-flex flex-column justify-content-center py-60 py-md-0">
+              <div class="textBox">
+                <h1 class="fs-60 text-primary shadow-white text-md-end text-xl-start">沒關係，<br>只是現在有點喪</h1>
+                <h2 class="fs-40 text-primary mt-12 text-md-end text-xl-start"><span
+                    class="animation-swing d-inline-block" style="animation-delay: 0.5s;">喪泥☁</span> <span
+                    class="mx-8 animation-swing d-inline-block">Sunny☀</span><span
+                    class="d-block d-xl-inline">沒有什麼是一定</span></h2>
+                <div class="contentBox mt-16 mt-lg-32 text-end text-xl-start">
+                  <p class="fw-bold fs-24">頹喪到以為再也不會好了嗎？!</p>
+                  <p class="fw-bold fs-24">快樂有起有滅，<span class="d-block d-md-inline">不開心痛苦也是一樣的呢</span></p>
+                </div>
+              </div>
+              <div class="d-none d-md-flex justify-content-end nextDiv">
+                <button id="scrollButton" class="animation-jumpY mt-20 mt-xl-0"><span
+                    class="material-symbols-rounded outline fs-60 text-white ">south</span></button>
+              </div>
+            </div>
           </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+        </div>
+    </section>
+
+    <section class="home-why">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-sm-7 col-xl-5 d-flex flex-column justify-content-center contentBox">
+            <h2 class="text-primary mb-20 mb-md-32 mt-sm-60 mt-lg-0">只是忘記<sapn class="d-block d-xl-inline">怎麼自由飛行</sapn>
+            </h2>
+            <p>在某些時候，<span class="d-inline-block d-md-inline">以為就也只能一直墜落了。</span></p>
+            <p>深不見底，直直下落，<span class="d-inline-block d-md-inline">無人承接。</span></p>
+
+            <p class="mt-16">遺失了感受夏陽冬雨、<span class="d-inline-block d-md-inline">輕拂而過的微風，</span></p>
+            <p>純粹大笑、<span class="d-inline-block d-md-inline">忍不住心情好的那些能力。</span></p>
+
+            <p class="mt-16">陰晴圓缺，片片刻刻，<span class="d-inline-block d-md-inline">潮起潮落。</span></p>
+          </div>
+          <div class="col-sm-5 col-xl-7 d-flex justify-content-end firegirlBox">
+            <div class="firegirl">
+              <div class="imgBox">
+                <img src="../assets/images/fire-base.png">
+                <img src="../assets/images/fire-2.png" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800">
+                <img src="../assets/images/fire-3.png" data-aos="fade-down" data-aos-duration="1200"
+                  data-aos-delay="800">
+              </div>
+              <img src="../assets/images/fire-4.png" class="topLayer" data-aos="fade-down" data-aos-duration="1200"
+                data-aos-delay="800" data-aos-offset="300">
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <%- include('./layout/footer'); -%>
 
-      <script type="module" src="../main.js"></script>
+    </section>
+
+    <section class="home-function p-block">
+      <div class="container-xl">
+        <div class="row">
+          <div class="col-lg-5 funItemGroup">
+            <div class="d-flex flex-wrap">
+              <div class="funItem" data-aos="fade-down">
+                <div class="imgBox"><img src="../assets/images/fun-ease.png"></div>
+                <div class="textItem">
+                  <p class="d-inline-block d-sm-block mx-8 mx-sm-0">介面簡約</p>
+                  <p class="d-inline-block d-sm-block mx-8 mx-sm-0">蒐藏無礙</p>
+                </div>
+              </div>
+              <div class="funItem" data-aos="fade-down">
+                <div class="imgBox"><img src="../assets/images/fun-format.png"></div>
+                <div class="textItem">
+                  <p class="d-inline-block d-sm-block mx-8 mx-sm-0">圖文影音</p>
+                  <p class="d-inline-block d-sm-block mx-8 mx-sm-0">型式多樣</p>
+                </div>
+              </div>
+              <div class="funItem" data-aos="fade-down">
+                <div class="imgBox"><img src="../assets/images/fun-folder.png"></div>
+                <div class="textItem">
+                  <p class="d-inline-block d-sm-block mx-8 mx-sm-0">隨機顯示</p>
+                  <p class="d-inline-block d-sm-block mx-8 mx-sm-0">主題翻閱</p>
+                </div>
+              </div>
+              <div class="funItem" data-aos="fade-down">
+                <div class="imgBox"><img src="../assets/images/fun-security.png"></div>
+                <div class="textItem">
+                  <p class="d-inline-block d-sm-block mx-8 mx-sm-0">專屬紀錄</p>
+                  <p class="d-inline-block d-sm-block mx-8 mx-sm-0">隱私保護</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="titleBox text-primary fw-bold text-end" data-aos="fade-down">
+              <h3>觸動過的一字一句、<span class="d-block d-sm-inline-block">印入眸中的那幕</span></h3>
+              <h2>都紀錄下來吧！</h2>
+            </div>
+            <div class="contentBox mt-20 mt-lg-40 text-end" data-aos="fade-down">
+              <p>累積過往激勵的能量，</p>
+              <p>在疲累的時候為自己加點油吧！</p>
+              <p>都會走過的 ，</p>
+              <p>因為這就是Life Game 啊 : )</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-price p-block">
+      <div class="container-xl">
+        <h2 class="text-primary text-center mb-32">抽卡訂閱方案</h2>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="price-card">
+              <div class="priceImg priceImg1 d-flex justify-content-center align-items-end p-20">
+                <a href="#" class="btn fs-24">Try Now!</a>
+                <p class="text-white text-center fs-20 font-family-sp">訪客</p>
+              </div>
+              <div class="price-body text-center pt-24 pb-32 py-sm-32 px-12 ">
+                <p class="number text-primary fs-48 mb-48 fw-bold">Free</p>
+                <ul class="list-unstyled font-family-sp mt-28">
+                  <li>1本固定卡冊</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="price-card">
+              <div class="priceImg priceImg2 d-flex justify-content-center align-items-end p-20">
+                <a href="#" class="btn fs-24">立即註冊</a>
+                <p class="text-white text-center fs-20 font-family-sp">註冊會員</p>
+              </div>
+              <div class="price-body text-center pt-24 pb-32 px-12 ">
+                <p class="number text-primary fs-48 mb-48 fw-bold">Free</p>
+                <ul class="list-unstyled font-family-sp mt-28">
+                  <li>5本自訂卡冊</li>
+                  <li class="mt-8">文字抽卡</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="price-card">
+              <div class="priceImg priceImg3 d-flex justify-content-center align-items-end p-20">
+                <a href="#" class="btn fs-24">立即購買</a>
+                <p class="text-white text-center fs-20 font-family-sp">Premium會員</p>
+              </div>
+              <div class="price-body text-center pt-24 pb-32 px-12 ">
+                <p class="number text-primary fs-48 mb-48 fw-bold">NT100<span class="fs-20"> / 月</span></p>
+                <ul class="list-unstyled font-family-sp mt-28">
+                  <li>10本固定卡冊</li>
+                  <li class="mt-8">文字抽卡</li>
+                  <li class="mt-8">圖片抽卡</li>
+                  <li class="mt-8">YT影片抽卡</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-draw p-block mt-32">
+      <div class="container-xl">
+        <div class="row">
+          <div class="col-lg-6 d-lg-flex flex-column justify-content-between pb-24">
+            <div class="titleBox text-white">
+              <h2>抽卡體驗</h2>
+              <p class="fs-32 fw-bold">Just Try!</p>
+            </div>
+            <button type="button" class="btn">再抽一次</button>
+          </div>
+          <div class="col-lg-6">
+            <div class="draw-card d-flex flex-column justify-content-center p-24">
+              <p>The only way is go through</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <section class="home-qa p-block">
+      <div class="container-xl">
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center mt-32">
+          <div class="titleBox d-flex align-items-center mb-20">
+            <div class="imgBox d-inline-block"><img src="../assets/images/logo-01.png"></div><span
+              class="ms-12 text-primary fw-bold fs-32">常見FAQ</span>
+          </div>
+          <a class="seemore link-secondary fs-16 fw-bold" href="#">觀看更多FAQ</a>
+        </div>
+        <div class="row">
+          <div class="col d-flex flex-column">
+            <div class="QAcard">
+              <button class="question d-flex align-items-center justify-content-between px-24 pt-20 pb-12" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+                aria-controls="collapseExample">
+                <p>一定要註冊才能使用服務嗎？</p>
+                <span class="material-symbols-outlined add text-primary fw-bold">
+                  add
+                </span><span class="material-symbols-outlined remove text-primary fw-bold">
+                  remove
+                </span>
+              </button>
+              <div class="collapse" id="collapseExample">
+                <div class="answer px-24 pt-12 pb-20">
+                  您也可以先使用上放的體驗抽卡功能試玩看看。若有興趣再註冊成為我們的會員，享有更多功能喔！
+                </div>
+              </div>
+            </div>
+            <div class="QAcard">
+              <button class="question d-flex align-items-center justify-content-between px-24 pt-20 pb-12" type="button"
+                data-bs-toggle="collapse" data-bs-target="#QA2" aria-expanded="false" aria-controls="collapseExample">
+                <p>資料可以匯出嗎?</p>
+                <span class="material-symbols-outlined add text-primary fw-bold">
+                  add
+                </span><span class="material-symbols-outlined remove text-primary fw-bold">
+                  remove
+                </span>
+              </button>
+              <div class="collapse" id="QA2">
+                <div class="answer px-24 pt-12 pb-20">
+                  您可以在卡片管理頁中依照卡冊進行下載，圖片將以壓縮檔提供，文字資料則以csv檔提供。
+                </div>
+              </div>
+            </div>
+            <div class="QAcard">
+              <button class="question d-flex align-items-center justify-content-between px-24 pt-20 pb-12" type="button"
+                data-bs-toggle="collapse" data-bs-target="#QA3" aria-expanded="false" aria-controls="collapseExample">
+                <p>有什麼付款方式?</p>
+                <span class="material-symbols-outlined add text-primary fw-bold">
+                  add
+                </span><span class="material-symbols-outlined remove text-primary fw-bold">
+                  remove
+                </span>
+              </button>
+              <div class="collapse" id="QA3">
+                <div class="answer px-24 pt-12 pb-20">
+                  目前僅提供信用卡付款。
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+  </main>
+
+  <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
 </body>
 
 </html>
