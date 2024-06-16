@@ -22,6 +22,7 @@
 @import './layout/header.scss';
 @import './layout/footer.scss';
 @import './pages/index.scss';
+@import './pages/about.scss';
 
 
 
@@ -47,4 +48,8 @@
         color: $primary;
         border: 2px solid $primary;
     }
+}
+
+.block-p {
+    padding-block: 100px;
 }

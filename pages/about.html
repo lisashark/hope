@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
-    <h1>我是about</h1>
-    <%- include('./layout/footer'); -%>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <base href="/hope/">
+  <title>about</title>
+</head>
+
+<body>
+
+  <header class="bg_header"> <%- include('./layout/header'); -%></header>
+  <main class="page_about">
+    <div class="container block-p">
+      <section class="lh2">
+        <h1>關於take out翻局</h1>
+        <p>這就是滿單純的一個想法。</p>
+        <div class="br"></div>
+        <p>在台灣，我們汲汲營營的升學求職競爭，不乏許多背誦型的翻卡學習應用。在過去幾個月，因緣開始玩起了卡牌的我，想要找到適合的隨機抽牌程式，卻苦尋沒有適合的。</p>
+        <p>文字、記憶這些可能都會消逝，不過能夠在某些時刻，加入那麼一點隨機的小期待，或許也能夠成為某種小力量吧？</p>
+        <p>所以這個Project就在很隨興的心情下開展了XD</p>
+        <p>事實上它也有99%可能胎死腹中</p>
+        <div class="br"></div>
+        <p>我也不知道？</p>
+
+      </section>
+      <section class="shark" id="shark">
+        <h2>Lisa Shark戾鯊</h2>
+        <p>希望早日戾氣盡消</p>
+      </section>
+    </div>
+  </main>
+  <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
-  </body>
+</body>
+
 </html>
