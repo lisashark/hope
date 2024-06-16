@@ -1,44 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about</title>
-    <script type="module" crossorigin src="/hope/assets/main-1de9a078.js"></script>
-    <link rel="stylesheet" href="/hope/assets/main-27cf9dae.css">
-  </head>
-  <body>
-    <header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <base href="/hope/">
+  <title>about</title>
+  <script type="module" crossorigin src="/hope/assets/main-e473426f.js"></script>
+  <link rel="stylesheet" href="/hope/assets/main-3efd8c29.css">
+</head>
+
+<body>
+
+  <header class="bg_header"> <header>
     <nav class="navbar navbar-expand-md">
         <div class="container-xl align-items-center justify-content-between">
-            <div class="imgBox me-md-32"><img src="/hope/assets/logo-03c39686.png"></div>
+            <div class="imgBox me-md-32"><a href="/pages/index.html"><img src="/hope/assets/logo-03c39686.png"></a></div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                 aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-md-between" id="navbarScroll">
                 <ul class="d-flex align-items-center navbar-nav">
-                    <li><a href="" class="liBtn">我的抽卡</a></li>
-                    <li><a href="" class="liBtn ms-md-12 mt-16 mt-md-0 d-inline-block">管理卡冊</a></li>
+                    <li><a href="/pages/about.html" class="liBtn">關於Project</a></li>
+                    <li><a href="" class="liBtn ms-md-12 mt-16 mt-md-0 d-inline-block">更多心靈資訊</a></li>
                 </ul>
                 <div class="login d-flex flex-column flex-md-row align-items-center">
-                    <a class="member me-md-12 mt-16 mt-md-0" href="#">我的帳號</a>
+                    <a class="member me-md-12 mt-16 mt-md-0" href="/pages/about.html#shark">Lisa Shark</a>
                     <button type="button"
                         class="logout d-flex align-items-center text-center text-md-start mt-16 mt-md-0">
                         <span class="material-symbols-rounded nothover me-4">mood
                         </span><span class="material-symbols-outlined ishover me-4">
                             sentiment_stressed
-                        </span>登出</button>
+                        </span>贊助平台</button>
                 </div>
             </div>
         </div>
     </nav>
-</header>    <h1>我是about</h1>
-    <footer class="footer">
+</header></header>
+  <main class="page_about">
+    <div class="container block-p">
+      <section class="lh2">
+        <h1>關於take out翻局</h1>
+        <p>這就是滿單純的一個想法。</p>
+        <div class="br"></div>
+        <p>在台灣，我們汲汲營營的升學求職競爭，不乏許多背誦型的翻卡學習應用。在過去幾個月，因緣開始玩起了卡牌的我，想要找到適合的隨機抽牌程式，卻苦尋沒有適合的。</p>
+        <p>文字、記憶這些可能都會消逝，不過能夠在某些時刻，加入那麼一點隨機的小期待，或許也能夠成為某種小力量吧？</p>
+        <p>所以這個Project就在很隨興的心情下開展了XD</p>
+        <p>事實上它也有99%可能胎死腹中</p>
+        <div class="br"></div>
+        <p>我也不知道？</p>
+
+      </section>
+      <section class="shark" id="shark">
+        <h2>Lisa Shark戾鯊</h2>
+        <p>希望早日戾氣盡消</p>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
     <div class="container-xl d-flex flex-column flex-sm-row justify-content-between py-20 align-items-center">
         <a class="imgBox" href="./index.html"><img src="/hope/assets/logo-2-df92d32f.png"></a>
-        <p class="fs-16">© 2023 風來了就彎腰</p>
+        <p class="fs-16">© 2023 Lisa Shark Studio</p>
     </div>
 </footer>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -46,5 +70,6 @@
     AOS.init();
 </script>
     
-  </body>
+</body>
+
 </html>
